@@ -12,28 +12,19 @@
     <title>Le temps réel sur le web : NodeJS</title>
 </head>
 <body>
-        <div class="card">
-            <div class="card-image">
-                <div class="socialmedia">
-                    <button class="social-signin facebook">Se connecter avec facebook</button>
-                    <button class="social-signin twitter">Se connecter avec Twitter</button>
-                    <button class="social-signin google">Se connecter avec Google+</button>
-                </div>
-            </div>
-            <div class="card-body">
-                <div class="input-boxs">
-                    <p class="info">Adresse e-mail</p>
-                    <input class="input-field" type="text" name="email" placeholder="Entrer votre Email" />
-                    <p class="info">Mot de passe</p>
-                    <input class="input-field" type="password" name="password" placeholder="Entrer le mot de passe " />
-                    <p id="error">J'ai oublié le mot de passe</p><br>
-                    <a href="profil.html"><input class="input-btn" type="submit" name="signup_submit" value="Se connecter" /></a>
-                    <br>
-                    <br>
-                    <a href="inscription.html"><input class="input-btn" type="submit" name="signup_submit" value="S'inscrire" /></a>
-                </div>
-            </div>
-        </div> 
+    
+    <form action="/login" method="POST">
+        <p class="info">Adresse e-mail</p>
+        <input class="input-field" type="text" name="email" placeholder="Entrer votre Email" />
+        <p class="info">Mot de passe</p>
+        <input class="input-field" type="password" name="password" placeholder="Entrer le mot de passe " />
+        <p id="error">J'ai oublié le mot de passe</p><br>
+        <a href="profil.html"><input class="input-btn" type="submit" name="signup_submit" value="Se connecter" /></a>
+        <br>
+        <br>
+        <a href="inscription.html"><input class="input-btn" type="submit" name="signup_submit" value="S'inscrire" /></a> 
+    </form> 
+        
 </body>
 <script src="services.js"></script>
 </html>
