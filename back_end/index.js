@@ -26,5 +26,4 @@ mongoose.connect(
   }
 );
 
-
 app.use("/users", require("./routes/userRouter"));
