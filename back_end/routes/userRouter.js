@@ -8,7 +8,7 @@ router.post("/register", async (req, res) => {
   try {
     let { email, password, passwordCheck, displayName } = req.body;
 
-    // validate
+    
 
     if (!email || !password || !passwordCheck)
       return res.status(400).json({ msg: "Not all fields have been entered." });
@@ -48,7 +48,7 @@ router.post("/login", async (req, res) => {
   try {
     const { email, password } = req.body;
 
-    // validate
+  
     if (!email || !password)
       return res.status(400).json({ msg: "Not all fields have been entered." });
 
